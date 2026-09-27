@@ -1,4 +1,4 @@
- name: Hello DevOps CI
+name: Hello DevOps CI
 
 on:
   push:
