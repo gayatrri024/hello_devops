@@ -23,3 +23,9 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Tag Docker image
+        run: docker tag hello-devops:latest gayatri1702/hello-devops:latest
+
+      - name: Push Docker image
+        run: docker push gayatri1702/hello-devops:latest
