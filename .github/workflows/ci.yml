@@ -1,0 +1,16 @@
+name: Hello DevOps CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Python application
+        run: python app.py
